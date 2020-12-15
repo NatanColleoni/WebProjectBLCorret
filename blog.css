@@ -1,0 +1,14 @@
+.div-btn{position:relative;width:20%;float:left;margin:0 5% 0 0;left:40%;-ms-transform:translateX(-60%);-webkit-transform:translateX(-60%);transform:translateX(-60%);}
+.box-btn{background-color:rgba(23, 27, 52, 0);font-size:1rem;border:0;padding:10px;margin:-2px 0;width:auto;color:#000;transition:all .3s;border:3px solid #bdbdbd;transition:all .3s;box-shadow:0 0 0 0;outline:0;}
+.box-btn:hover, .box-btn.active{transition:all .3s;border:3px solid #bf1c22;}
+.box-info-prod{font-size:1rem;color:#848484;}
+
+.box-cont{
+	display: none;
+}
+.box-cont.active{display:block !important;}
+.box-btn:hover, .box-btn.active {
+    transition: all .3s;
+    color: #ffffff !important;
+    background: #3e4094 !important;
+}

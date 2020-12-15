@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+/*body {
+    background: #00709a
+}*/
+
+.jvectormap-label {
+    position: absolute;
+    display: none;
+    border: solid 1px #CDCDCD;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #292929;
+    color: white;
+    font-family: sans-serif, Verdana;
+    font-size: smaller;
+    padding: 3px;
+}
+
+.jvectormap-zoomin, .jvectormap-zoomout {
+    position: absolute;
+    left: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #292929;
+    padding: 3px;
+    color: white;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    line-height: 10px;
+    text-align: center;
+}
+
+.jvectormap-zoomin {
+    top: 10px;
+}
+
+#hovered-region, #clicked-region {
+    background: #f36520;
+    border: 1px solid white;
+    color: #e4b045;
+    display: inline-block;
+    font: normal 10pt 'Ubuntu Mono';
+    margin-right: 3px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 170px
+}
+
+#hovered-region span, #clicked-region span {
+    color: #e4e770;
+    font-weight: bold
+}
+
+#brazil-map {
+    margin: 10px auto;
+    height: 500px;
+    max-width: 570px;
+}
+
+#brazil-map .jvectormap-container{
+    background: transparent !important;
+}

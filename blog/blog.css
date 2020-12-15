@@ -1,0 +1,257 @@
+button {
+	border:none;
+	
+}
+.container-blog{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 35px;
+}
+.container-blog .item-blog{
+    float: left;
+    position: relative;
+    width: 31.33%;
+    margin: 3% 1%;
+}
+.container-blog .item-blog {
+	text-decoration:none;
+}
+.container-blog .item-blog .bkg-img{
+    height: 250px;
+    transition: all 0.3s;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*.container-blog .item-blog:hover .bkg-img{
+    box-shadow: 0 0 10px 0 #888888;
+}*/
+.noticia-btn button {
+  border: solid 1px #fff;
+}
+.container-blog .item-blog .publicado{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #414141;
+}
+.container-blog .item-blog h1{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+  color: #414141;
+  font-weight: 700;
+  line-height: 30px;
+
+}
+.container-blog .item-blog h2{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 25px;
+    text-align: justify;
+    font-family:'MyriadPro-Regular';
+  font-size: 16px;
+  line-height: 30px;
+  color: #414141;
+}
+.container-blog .item-blog .saiba-mais{
+    float: left;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+  font-weight: 700;
+  color: #3e4094;
+  padding: 10px;
+  text-decoration: none;
+  border:solid 1px #fff;
+}
+.mais-materia{
+    background: #e3e0db;
+}
+.mais-materia .titulo-secao h1{
+    color: #9a9fa6;
+}
+.banner-blog-interna{
+    height: 50vh;
+}
+
+.share-blog{
+    width: 40px;
+    float: left;
+    position: relative;
+}
+.share-blog li{
+    margin: 10px 0;
+}
+.share-blog li img{
+    width: 32px;
+    margin-left: -30px;
+    position: relative;
+    list-style: none;
+}
+.info-blog{
+    float: left;
+    width: calc(100% - 40px);
+    padding-left: 35px;
+}
+.nav-blog{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: #786644;
+    float:left;
+}
+.nav-blog a{
+    font-family: 'Raleway', sans-serif;
+}
+area-texto {
+    font-size: 16px;
+    line-height: 20px;
+    color: #414141;
+}
+.nav-blog span{
+    font-size: 0.6em;
+    margin: 0 5px;
+}
+.nav-blog a{
+    color: #3e4094;
+    font-weight: bold;
+}
+.nav-blog p{
+    font-family: 'Raleway', sans-serif;
+     margin-top: 18px;
+         color: #3e4094;
+             font-weight: bold;
+
+
+}
+.info-blog .publicado{
+    font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #414141;
+}
+.info-blog h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    color: #414141;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.info-blog h2{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6em;
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    /*margin-top: 10px;*/
+}
+
+.banner-blog{
+    padding-bottom: 3em;
+}
+.banner-blog::before{
+    display: none;
+}
+.blog-destaque{
+    float: right;
+    position: relative;
+    width: 50%;
+    padding: 45px;
+    background: rgba(255,255,255,0.8);
+}
+.blog-destaque .publicado{
+    color: #665940;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+.blog-destaque h1{
+    font-family: 'Raleway', sans-serif;
+    /*font-weight: bolder;*/
+    color: #000;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+.blog-destaque h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-top: 15px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+.blog-destaque .saiba-mais{
+    float: left;
+    border: none;
+    color: #bb9451;
+}
+@media screen and (max-width: 768px) {
+	.noticia-btn button {
+	  border: solid 2px #3e4094;
+	}
+}
+@media(max-width:991px){
+    .container-blog{
+        display: block;
+    }
+    .container-blog .item-blog{
+        width: 100%;
+    }
+	    .blog-destaque{
+        width: 100%;
+        padding: 25px;
+    }
+    .blog-destaque h1{
+        font-size: 1.4em;
+    }
+    .share-blog{
+        width:100%;
+    }
+    .share-blog li{
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .info-blog{
+        padding: 0;
+        width: 100%;
+    }
+    .nav-blog{
+        display: none;
+    }
+    .info-blog h2{
+        margin-top: 25px;
+    }
+    .info-blog h1{
+        font-size: 1.4em;
+    }
+    .share-blog {
+        margin-left:-20px;
+    }
+    .share-blog .wpp-share a {
+        padding:0 0 0 25px;
+    }
+}
+
+.container-blog a {
+	padding: 30px 10px;
+}
+
+.area-texto {
+    font-size:16px;
+}
+
+

@@ -1,0 +1,21 @@
+AddDefaultCharset ISO-8859-1
+
+SetEnv SESSAO "SITE"
+
+Options -Indexes
+
+#Habilita o M�dulo de Reescrita
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+#Se a URL apontar para um arquivo, vai diretamente para ele
+RewriteCond %{REQUEST_FILENAME} !-f
+#Se a URL apontar para uma pasta, vai diretamente para ela
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?(.*)$ $1/index.php?id=$2&pg=$3&sub=$4&aux1=$5&aux2=$6&aux3=$7&aux4=$8 [L]
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]

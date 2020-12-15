@@ -1,0 +1,12 @@
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
+<?
+$cfg->close();
+?>

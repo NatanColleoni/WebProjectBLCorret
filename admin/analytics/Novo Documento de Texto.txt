@@ -1,0 +1,31 @@
+-- --------------------------------------------------------
+-- Servidor:                     191.6.196.21
+-- Versão do servidor:           5.5.43-log - Source distribution
+-- OS do Servidor:               Linux
+-- HeidiSQL Versão:              9.3.0.4993
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Copiando estrutura para tabela grupoconnectph.analytics
+CREATE TABLE IF NOT EXISTS `analytics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) DEFAULT NULL,
+  `codigo` text,
+  `ultimaModificacao` datetime DEFAULT NULL,
+  `excluido` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+-- Copiando dados para a tabela grupoconnectph.analytics: ~2 rows (aproximadamente)
+/*!40000 ALTER TABLE `analytics` DISABLE KEYS */;
+INSERT INTO `analytics` (`id`, `titulo`, `codigo`, `ultimaModificacao`, `excluido`) VALUES
+	(1, 'Acompanhamento', NULL, '2015-09-25 13:34:39', 0),
+	(2, 'Conversão - Contato', NULL, '2015-09-25 09:20:33', 0);
+/*!40000 ALTER TABLE `analytics` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

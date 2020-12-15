@@ -1,0 +1,166 @@
+/* -------------------------------- CONTATO -------------------------------- */
+.container-contato .row {
+    padding-top: 104px;
+}
+.contato-header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: #000c2a;
+    text-transform: uppercase;
+}
+.contato-header span {
+    color: #e10b23;
+    padding-right: 5px;
+}
+.contato-formulario {
+    padding-top: 35px;
+}
+.form-contato .form-item {
+    padding: 10px 0;
+}
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border: solid 1px #cccccc;
+    padding: 11px 20px;
+}
+.form-contato textarea {
+    resize: none;
+}
+.form-contato select {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border: solid 1px #cccccc;
+    padding: 10px 20px;
+}
+.form-contato .form-item.form-nome,
+.form-contato .form-item.form-tel,
+.form-contato .form-item.form-estado {
+    padding-right: 13px;
+}
+.form-contato .form-item.form-email,
+.form-contato .form-item.form-cel,
+.form-contato .form-item.form-cidade {
+    padding-left: 13px;;
+}
+.form-contato .form-item :-ms-input-placeholder {
+    color: #686a6d;
+}
+.form-contato .form-item :-moz-placeholder {
+    color: #686a6d;
+}
+.form-contato .form-item ::-moz-placeholder {
+    color: #686a6d;
+}
+.form-contato .form-item ::-webkit-input-placeholder {
+    color: #686a6d;
+}
+.form-contato .icone-obrigatorio {
+    position: absolute;
+    right: -8px;
+    top: 25px;
+}
+.form-contato .form-nome .icone-obrigatorio,
+.form-contato .form-tel .icone-obrigatorio {
+    right: 5px;
+}
+.form-contato .icone-check,
+.form-contato .icone-asterisk {
+    position: relative;
+    z-index: 1;
+    font-size: 9px;
+}
+.form-contato .icone-asterisk {
+    right: 12px;
+}
+.form-contato input ~ .icone-obrigatorio .icone-check,
+.form-contato input.active ~ .icone-obrigatorio .icone-asterisk,
+.form-contato textarea ~ .icone-obrigatorio .icone-check,
+.form-contato textarea.active ~ .icone-obrigatorio .icone-asterisk {
+    visibility: hidden !important;
+}
+.form-contato input ~ .icone-obrigatorio .icone-asterisk,
+.form-contato input.active ~ .icone-obrigatorio .icone-check,
+.form-contato textarea ~ .icone-obrigatorio .icone-asterisk,
+.form-contato textarea.active ~ .icone-obrigatorio .icone-check {
+    visibility: visible !important;
+}
+.form-contato .botao {
+    padding: 20px 0 20px 0;
+    text-align: right;
+}
+.form-contato .botao .btn-contato {
+    background-color: #000c2a;
+    border: solid 1px #000c2a;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding: 23px 36px;
+    transition: all 0.5s;
+}
+.form-contato .botao .btn-contato:hover {
+    background-color: #fff;
+    color: #000c2a;
+}
+
+.contato-info {
+    background-color: #000c2a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 30px 0 90px 0;
+}
+.contato-info .container {
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+.contato-info svg {
+    height: 48px;
+    width: auto;
+}
+.localizacao-endereco a {
+    color: #fff;
+}
+.contato-info .localizacao-titulo svg {
+    padding-right: 10px;
+}
+
+.contato-mapa {
+    / padding-top: 94px; /
+    height: 50vh;
+    / padding-bottom: 109px; /
+}
+.logo-opacidade img {
+    width: 367px;
+    margin: auto;
+    opacity: 0.7;
+    padding-top: 56px;
+}
+.contato-img-mapa div {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #000c2a;
+    text-align: center;
+    padding-bottom: 26px;
+}
+.contato-img-mapa img {
+    max-height: 402px;
+}
+@media screen and (max-width: 768px){
+	.form-contato .form-item.form-email, .form-contato .form-item.form-cel, .form-contato .form-item.form-cidade {
+		padding-left: 0;
+	}
+	.form-contato .form-item.form-nome, .form-contato .form-item.form-tel, .form-contato .form-item.form-estado {
+		padding-right: 0;
+	}
+	.form-contato .form-nome .icone-obrigatorio, .form-contato .form-tel .icone-obrigatorio {
+		right: -8px;
+	}
+        .form-contato .botao .btn-contato {
+            width: 100%;
+        }
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "LondrinaSolid-Regular";
+    src:url("LondrinaSolid-Regular.otf") format("otf"),
+        url("LondrinaSolid-Regular.ttf") format("truetype"),
+        url("LondrinaSolid-Regular.woff") format("woff"),
+        url("LondrinaSolid-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LondrinaSolid-Light";
+    src:url("LondrinaSolid-Light.otf") format("otf"),
+        url("LondrinaSolid-Light.ttf") format("truetype"),
+        url("LondrinaSolid-Light.woff") format("woff"),
+        url("LondrinaSolid-Light.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
